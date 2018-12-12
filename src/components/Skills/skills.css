@@ -1,0 +1,27 @@
+.skills {
+  margin: 30px;
+}
+
+.setRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+.setCol {
+  border-right: 2px solid;
+  padding: 0px 30px 0px 30px;
+  text-align: left;
+}
+
+.lastCol {
+  padding-left: 30px;
+  text-align: left;
+}
+
+.colTitle {
+  /* font-size: 16px; */
+  text-align: center;
+  font-weight: 600;
+}

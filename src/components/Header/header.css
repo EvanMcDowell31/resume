@@ -1,0 +1,19 @@
+.header {
+  font-weight: 600;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.subtitle {
+  font-size: 25px;
+  color: rgb(80, 80, 80);
+  font-style: italic;
+}
+
+.headerContent {
+  text-align: left;
+}
+
+.headerText {
+  font-size: 40px;
+}
