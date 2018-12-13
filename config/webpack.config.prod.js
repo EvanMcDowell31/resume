@@ -1,5 +1,3 @@
-
-
 const fs = require("fs");
 const path = require("path");
 const webpack = require("webpack");
@@ -359,8 +357,9 @@ module.exports = {
             test: cssModuleRegex,
             loader: getStyleLoaders({
               importLoaders: 1,
-              sourceMap: shouldUseSourceMap,
+              sourceMap: true,
               modules: true,
+              minimize: true,
               getLocalIdent: getCSSModuleLocalIdent
             })
           },

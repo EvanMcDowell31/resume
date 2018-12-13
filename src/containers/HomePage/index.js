@@ -9,18 +9,18 @@
  * the linting exception.
  */
 
-import React from 'react';
-import { PDFExport } from '@progress/kendo-react-pdf';
-import { resume } from '../../resume/resume';
-import Header from '../../components/Header';
-import Profile from '../../components/Profile';
-import Line from '../../components/Line';
-import Education from '../../components/Education';
-import Skills from '../../components/Skills';
-import Experience from '../../components/Experience';
-import Contact from '../../components/Contact';
-import Social from '../../components/Social';
-import Styles from './homePage.css';
+import React from "react";
+import { PDFExport } from "@progress/kendo-react-pdf";
+import { resume } from "../../resume/resume";
+import Header from "../../components/Header";
+import Profile from "../../components/Profile";
+import Line from "../../components/Line";
+import Education from "../../components/Education";
+import Skills from "../../components/Skills";
+import Experience from "../../components/Experience";
+import Contact from "../../components/Contact";
+import Social from "../../components/Social";
+import Styles from "./homePage.css";
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
@@ -29,7 +29,7 @@ export default class HomePage extends React.PureComponent {
   constructor() {
     super();
     this.state = {
-      showSocial: true,
+      showSocial: true
     };
   }
 
@@ -48,7 +48,7 @@ export default class HomePage extends React.PureComponent {
       skills,
       contact,
       employment,
-      social,
+      social
     } = resume;
     const { email, phone } = contact;
     return (
@@ -63,7 +63,7 @@ export default class HomePage extends React.PureComponent {
             this.resumePDF = r;
           }}
         >
-          <div className={Styles.page}>
+          <div className={Styles.HomePage}>
             <Header name={name} label={info.label} />
             <Line />
             <Profile brief={info.brief} />
